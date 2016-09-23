@@ -21,9 +21,16 @@
 		<!-- Tag to tell robots not to index the content of a page -->
 		<meta name="robots" content="noindex, nofollow">
 
+		<!-- default scripting language-->
+		<meta http-equiv="Content-Script-Type" content="text/JavaScript" />
+
 		<script type="text/javascript">
 		function Hello () {
 			alert("Hi! thanks for clicking");
+		}
+
+		function EventHandler(){
+			alert("Event handler");
 		}
 		</script>
 
@@ -61,6 +68,8 @@
 
 		<p class="thick green">this is thick green</p>
 		<hr/>
+
+		<p onmouseover="EventHandler();">mouse over event handler</p>
 
 		<p><center>centered</center></p>
 
